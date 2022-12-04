@@ -10,7 +10,8 @@ const connectDB = () => {
       useFindAndModify: true
     })
     .then(() => console.log("MongoDB Connected..."))
-    .catch(err => console.log(err.message));
+    .catch(err => console.log("hrllo bhai",err)
+    );
 };
 
 module.exports = connectDB;
