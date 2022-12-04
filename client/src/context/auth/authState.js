@@ -115,7 +115,7 @@ const AuthState = (props) => {
     } catch (err) {
       if (!err.response) {
         alert("Connection Cannot Be Made to Server");
-        // console.log(res.data);
+        console.log(res.data);
       } else {
         dispatch({
           type: "LOGIN_FAIL",
