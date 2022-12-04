@@ -94,7 +94,7 @@ const AuthState = (props) => {
 
     try {
       const res = await axios.post(
-        "https://gvfoodwahalla.herokuapp.com/api/login",
+        "https://joyous-teal-rabbit.cyclic.app/api/login",
         formData,
         config
       );

@@ -9,7 +9,7 @@ import axios from "axios";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
-axios.defaults.baseURL = "https://gvfoodwahalla.herokuapp.com";
+axios.defaults.baseURL = "https://joyous-teal-rabbit.cyclic.app";
 ReactDOM.render(
   <React.StrictMode>
     <AuthState>
