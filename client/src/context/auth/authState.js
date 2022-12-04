@@ -94,7 +94,7 @@ const AuthState = (props) => {
 
     try {
       const res = await axios.post(
-        "https://naughty-bear-hosiery.cyclic.app/api/login",
+        "https://wild-fez-ant.cyclic.app/api/login",
         formData,
         config
       );
