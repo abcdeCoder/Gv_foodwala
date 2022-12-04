@@ -14,7 +14,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-
+connectDB();
 
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use(morgan(" :method :url :req[header] - :res[header]"));
@@ -60,4 +60,3 @@ app.listen(port, () => {
   console.log(`http://${process.env.HOST}/api/login`);
   console.log(`Server running on port ${port}`);
 });
-connectDB();
