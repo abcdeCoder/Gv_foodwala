@@ -50,7 +50,7 @@ Router.post("/", auth, async (req, res) => {
     console.log(e);
   }
   checksum_lib.genchecksum(params, process.env.MERCHANT_API_KEY, (err, checksum) => {
-    let txn_url = "https://securegw-stage.paytm.in/order/process";
+    let txn_url = "https://securegw.paytm.in/order/process";
     let form_fields = "";
     for (x in params) {
       form_fields +=
